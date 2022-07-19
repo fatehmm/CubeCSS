@@ -1,0 +1,95 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > * {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    perspective: 600px;
+    
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rotate {
+    from {
+    transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+   to {
+    transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    }
+   }
+   @-webkit-keyframes rotate {
+    from {
+    transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+   to {
+    transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    }
+   }
+   .cube {
+    animation: rotate 2s infinite linear;
+    -webkit-animation: rotate 2s infinite linear;
+   }
+  
+  .faces {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+    opacity: 0.2;
+    border: 2px black solid;
+  }
+.front  { transform: rotateY(  0deg); 
+background-color: blue;
+}
+.right  { transform: rotateY( 90deg); 
+background-color: red;
+}
+.back   { transform: rotateY(180deg); 
+background-color: yellow;
+}
+.left   { transform: rotateY(-90deg); 
+background-color: cyan;
+}
+.top    { transform: rotateX( 90deg); 
+background-color: pink;
+}
+.bottom { transform: rotateX(-90deg); 
+background-color: green;
+}
+main > h2 {
+    position: absolute;
+    right: 10%;
+}
+.front  { transform: rotateY(  0deg) translateZ(100px); }
+.right  { transform: rotateY( 90deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top    { transform: rotateX( 90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }

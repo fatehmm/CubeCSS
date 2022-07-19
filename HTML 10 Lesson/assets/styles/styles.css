@@ -1,0 +1,60 @@
+* {
+    font-family: Helvetica, sans-serif;
+    
+}
+body{
+    margin: 30px;
+}
+.code{
+    width: fit-content;
+}
+.niye  span {
+    font-size: 24px;
+    font-family:Helvetica, sans-serif;
+    
+}
+.niye {
+    position: relative;
+    width: 500px;
+    order: 1;
+}
+.niye p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.niye h2 {
+    font: 36px;
+    font-weight: bold;
+    font-family:Helvetica, sans-serif;
+    padding: 4px 0;
+    margin: 0;
+    position: relative;
+}
+.code::after {
+    content:"";
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    left: 3px;
+    bottom: 0px;
+    background: rgb(102,217,221);
+    background: linear-gradient(90deg, rgba(102,217,221,1) 0%, rgba(174,42,208,1) 35%, rgba(233,99,80,1) 70%, rgba(218,244,23,1) 100%);
+}
+.certification {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.certification > div , .zemanet > div , .talant > div , .mentor > div{
+    padding: 20px;
+}
+.zemanet,.talant,.mentor{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.flex-items > div{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
