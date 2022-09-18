@@ -1,2 +1,2 @@
-# firlanan-kub
+# Cube
 link: https://soundpadbrat.000webhostapp.com/
